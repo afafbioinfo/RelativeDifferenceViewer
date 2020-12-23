@@ -218,7 +218,7 @@ if __name__=="__main__":
 			if i==2:
 				SS=line
 		fp.close()
-                lenRNA=len(seq)-1
+                lenRNA=len(seq)
 
 		try:
    			SS
