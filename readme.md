@@ -10,7 +10,7 @@ It outputs raw mttaion count and Relative difference heatmaps.
 
 ## Executing RelativeDifferenceViewer:
 
-Rscript --vanilla Distributions2D.R --RD1=RNA_Experiment1_RMRPFREQUENCY_COUNTex_Rawdata.csv  --MD1=RNA_Experiment1_RNAFREQUENCY_COUNTex_MutationIndex.csv  --RD2=RNA_Experiment2_RNAPFREQUENCY_COUNTex_Rawdata.csv  --MD2=RNA_Experiment2_RNAFREQUENCY_COUNTex_MutationIndex.csv
+Rscript --vanilla RelativeDifferenceViewer.R --RD1=RNA_Experiment1_RMRPFREQUENCY_COUNTex_Rawdata.csv  --MD1=RNA_Experiment1_RNAFREQUENCY_COUNTex_MutationIndex.csv  --RD2=RNA_Experiment2_RNAPFREQUENCY_COUNTex_Rawdata.csv  --MD2=RNA_Experiment2_RNAFREQUENCY_COUNTex_MutationIndex.csv
 
 ## Input files
 
@@ -38,12 +38,11 @@ Note that the amplicon here was set to 20; this means that the sequence will be 
 
 Two files will be generated  RNAname_Experiment1_RNAnameFREQUENCY_COUNTex_MutationIndex.csv, RNAname_Experiment1_RNAnameFREQUENCY_COUNTex_Rawdata.csv that you can find in 2020-12-23 folder.
 
-  - As a last step, use the R script , please type  Rscript --vanilla  -h on the terminal to see the required arguments .
-Note that here you are comparing two conditions, so you need to run step 2  for each condition (Cell free and In cell, 10mol and 0 mol ...).
-Example of use:
-Rscript --vanilla Distributions2D.R --RD1=rpsM_Cell-Free_RMRPFREQUENCY_COUNTex_Rawdata.csv  --MD1=rpsM_Cell-Free_rpsMFREQUENCY_COUNTex_MutationIndex.csv  --RD2=rpsM_INCELL1_rpsMPFREQUENCY_COUNTex_Rawdata.csv  --MD2=rpsM_INCELL1_rpsMFREQUENCY_COUNTex_MutationIndex.csv
+  - As a last step, use the R script , please type  
+   Rscript  --vanilla RelativeDifferenceViewer.R -h on the terminal to see the required arguments.
 
-## OUtputs:
+
+## Outputs:
 4 plots: 
 Grid.png, Mutation_rate.png, Raw_mutation_count.png and Rdiff.png
 
