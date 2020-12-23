@@ -1,3 +1,6 @@
+#This script belongs to the Weeks laboratory, it has been modified in order to get the raw number of mutations.
+
+
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 ###############################################################################
